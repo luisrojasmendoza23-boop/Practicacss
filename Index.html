@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Practica.css"/>
+  </head>
+  <body>
+<header>
+  <nav class="gestor">
+    <div class="cuadro">
+      <h1>Gestor de Tarea</h1>
+
+      <a href="#">Tarea</a>
+      <a href="#"><b>Nueva Tarea</b></a>
+      <a href="#">Busqueda</a>
+      <a href="#">Cerrar Sesion</a>
+    </div>
+  </nav>
+</header>
+<section>
+  <form action="formulario" class="formulario">
+
+    <h1>Nueva Tarea</h1>
+   
+    <label for="codigo">Código de Tarea:</label>
+    <input type="text" id="codigo" name="codigo" class="uno" size="170">
+
+    
+    <label for="nombre">Nombre de la tarea:</label>
+    <input type="text" id="nombre" name="nombre" class="uno" size="170">
+
+    
+    <label for="descripcion">Descripción de la tarea:</label>
+    <input type="text" id="descripcion" name="descripcion" class="tres" size="150">
+
+   
+    <label for="prioridad">Nivel de prioridad:</label>
+    <select id="prioridad" name="prioridad" class="alta">
+      <option value="alta">Alta</option>
+      <option value="media">Media</option>
+      <option value="baja">Baja</option>
+    </select>
+
+  
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado" class="pendiente">
+      <option value="pendiente">Pendiente</option>
+      <option value="proceso">En proceso</option>
+      <option value="completado">Completado</option>
+    </select>
+
+   
+    <label for="fecha">Fecha de vencimiento:</label>
+    <input type="date" id="fecha" name="fecha" class="fecha">
+
+    <br><br>
+    <button type="submit" class="registrar">Registrar Tarea</button>
+
+  </form>
+</section>
+
+
+  </body>
+</html>
